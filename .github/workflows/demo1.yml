@@ -1,8 +1,10 @@
 name: Events Demo 1
 
 on:
-  push:
-  
+  pull_request:
+    types: 
+      - opened
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
